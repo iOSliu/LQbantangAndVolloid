@@ -33,6 +33,8 @@
 
 - (void)tableView:(UITableView *)tableView updatedContexAtIndexPath:(NSIndexPath *)indexPath;
 
+- (void)tableView:(UITableView *)tableView deleteContexAtIndexPath:(NSIndexPath *)indexPath;
+
 @end
 
 #pragma mark -

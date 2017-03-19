@@ -137,6 +137,21 @@ typedef NS_ENUM(NSUInteger, CellType) {
 
 -(void)tableView:(UITableView *)tableView updatedContexAtIndexPath:(NSIndexPath *)indexPath {
     self.indexPath = indexPath;
+    
+}
+
+-(void)tableView:(UITableView *)tableView deleteContexAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row > 1) {
+        if ([self.cellType[indexPath.row -1] integerValue] == CellTypeContent) {
+            self.contentText[indexPath.row - 1] = [NSString stringWithFormat:@"%@%@",self.contentText[indexPath.row - 1],self.contentText[indexPath.row]];
+            [self.contentText removeObjectAtIndex:indexPath.row];
+            [self.contentCellH removeObjectAtIndex:indexPath.row];
+            [self.cellType removeObjectAtIndex:indexPath.row];
+            [self.imgArr removeObjectAtIndex:indexPath.row];
+            
+            [self.tableView reloadData];
+        }
+    }
 }
 
 #pragma mark -键盘bar

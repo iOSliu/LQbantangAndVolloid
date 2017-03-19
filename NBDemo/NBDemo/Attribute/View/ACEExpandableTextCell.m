@@ -127,6 +127,20 @@
     }
 }
 
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
+{
+    
+    if ([text isEqualToString:@""] && range.location == 0) {
+        if([self.expandableTableView.delegate conformsToProtocol:@protocol(ACEExpandableTableViewDelegate)]) {
+            id<ACEExpandableTableViewDelegate> delegate = (id<ACEExpandableTableViewDelegate>)self.expandableTableView.delegate;
+            if ([delegate respondsToSelector:@selector(tableView:deleteContexAtIndexPath:)]) {
+              [delegate tableView:self.expandableTableView deleteContexAtIndexPath:[self.expandableTableView indexPathForCell:self]];
+            }
+        }
+    }
+    return YES;
+}
+
 @end
 
 #pragma mark -
