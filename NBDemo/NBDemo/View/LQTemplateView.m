@@ -64,6 +64,10 @@
 
 
 - (void)createSubviews {
+    
+    //隐藏上次被移动的view
+    _moveView.hidden = YES;
+    
     NSInteger difference = _templateLayout.itemCoordinaties.count - _items.count;
     if (difference > 0) {
         for (NSInteger i = 0; i < difference; i ++) {
@@ -205,6 +209,7 @@
     } completion:^(BOOL finished) {
         _moveView.hidden = YES;
     }];
+    
 }
 
 
