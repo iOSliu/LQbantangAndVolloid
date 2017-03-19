@@ -37,9 +37,9 @@ static NSString *itemID = @"itemID";
     _templateLayouts = [LQTemplateLayout itemTemplateLayout];
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    flowLayout.itemSize = CGSizeMake(375, 375);
+    flowLayout.itemSize = CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.width);
     
-    _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 64, 375, 370) collectionViewLayout:flowLayout];
+    _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 64, self.view.bounds.size.width, 370) collectionViewLayout:flowLayout];
     [self.view addSubview:_collectionView];
     
     _collectionView.dataSource = self;
@@ -49,7 +49,7 @@ static NSString *itemID = @"itemID";
     _collectionView.pagingEnabled = YES;
     _collectionView.backgroundColor = [UIColor whiteColor];
     
-    LQSelectView *selectView = [[LQSelectView alloc]initWithFrame:CGRectMake(0, 500, 375, 220)];
+    LQSelectView *selectView = [[LQSelectView alloc]initWithFrame:CGRectMake(0, 500, self.view.bounds.size.width, 220)];
     [self.view addSubview:selectView];
     [selectView creatView];
     

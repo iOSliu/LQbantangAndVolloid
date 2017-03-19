@@ -11,6 +11,8 @@
 #import "LQTemplateViewController.h"
 #import "LQAttriViewController.h"
 
+#import "LQTestViewController.h"
+
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property(nonatomic, strong) UITableView *tableView;
@@ -66,12 +68,15 @@ static NSString *KCellID = @"cellID";
     if (indexPath.row == 0) {
         LQAttriViewController *attriVC = [[LQAttriViewController alloc] init];
         [self.navigationController pushViewController:attriVC animated:YES];
-    }else {
+    }else if(indexPath.row == 1){
         
         LQTemplateViewController *temVC = [[LQTemplateViewController alloc] init];
         
         [self.navigationController pushViewController:temVC animated:YES];
         
+    }else {
+        LQTestViewController *testView = [[LQTestViewController alloc] init];
+        [self.navigationController pushViewController:testView animated:YES];
     }
 }
 
@@ -85,6 +90,7 @@ static NSString *KCellID = @"cellID";
         _mArr = [NSMutableArray array];
         [_mArr addObject:@"富文本"];
         [_mArr addObject:@"搭配"];
+        [_mArr addObject:@"测试"];
     }
     return _mArr;
 }

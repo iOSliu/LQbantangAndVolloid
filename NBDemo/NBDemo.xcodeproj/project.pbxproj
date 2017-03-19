@@ -39,6 +39,7 @@
 		49F130D81E73E0BC000693CE /* ACEExpandableTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F130D71E73E0BC000693CE /* ACEExpandableTextCell.m */; };
 		49F130DB1E73E0CD000693CE /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F130DA1E73E0CD000693CE /* MyView.m */; };
 		49F130DE1E73E776000693CE /* LQKeyboardBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F130DD1E73E775000693CE /* LQKeyboardBar.m */; };
+		49FF12241E7E483200ADE757 /* LQTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FF12231E7E483200ADE757 /* LQTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,8 @@
 		49F130DA1E73E0CD000693CE /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 		49F130DC1E73E775000693CE /* LQKeyboardBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQKeyboardBar.h; sourceTree = "<group>"; };
 		49F130DD1E73E775000693CE /* LQKeyboardBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQKeyboardBar.m; sourceTree = "<group>"; };
+		49FF12221E7E483200ADE757 /* LQTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQTestViewController.h; sourceTree = "<group>"; };
+		49FF12231E7E483200ADE757 /* LQTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +176,8 @@
 				49D28CC61E6F908E00AA32F4 /* AppDelegate.m */,
 				49D28CC81E6F908E00AA32F4 /* ViewController.h */,
 				49D28CC91E6F908E00AA32F4 /* ViewController.m */,
+				49FF12221E7E483200ADE757 /* LQTestViewController.h */,
+				49FF12231E7E483200ADE757 /* LQTestViewController.m */,
 				49F130D31E73DE67000693CE /* UIView+Extension.h */,
 				49F130D41E73DE68000693CE /* UIView+Extension.m */,
 				49D28D7A1E6FABE300AA32F4 /* australia.jpg */,
@@ -437,6 +442,7 @@
 				49D28CCA1E6F908E00AA32F4 /* ViewController.m in Sources */,
 				49F130B51E73CFBD000693CE /* LQCollectionViewCell.m in Sources */,
 				49F130CA1E73D385000693CE /* LQSelectView.m in Sources */,
+				49FF12241E7E483200ADE757 /* LQTestViewController.m in Sources */,
 				49F130BB1E73D001000693CE /* LQItemCoordinate.m in Sources */,
 				49F130C11E73D037000693CE /* LQTemplateLayout.m in Sources */,
 				49D28CC71E6F908E00AA32F4 /* AppDelegate.m in Sources */,
