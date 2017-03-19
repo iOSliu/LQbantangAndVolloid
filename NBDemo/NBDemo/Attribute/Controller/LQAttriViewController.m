@@ -49,7 +49,7 @@ typedef NS_ENUM(NSUInteger, CellType) {
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    NSLog(@"===hsjhja==");
     self.title = @"发布";
     self.view.backgroundColor = [UIColor whiteColor];
     
